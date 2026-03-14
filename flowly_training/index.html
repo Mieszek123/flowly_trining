@@ -7,35 +7,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 
     <script>
     tailwind.config = {
         theme: {
-        extend: {
-            fontFamily: {
-            syne: ['"Syne"', 'sans-serif'],
-            dm: ['"DM Sans"', 'sans-serif'],
-            },
-            colors: {
-            'gray-rgba': 'rgba(240, 237, 230, 0.5)',
-            'green': 'rgba(200, 240, 74, 0.12)',
-            'bordd': 'rgba(200, 240, 74, 0.3)',
-            'grayy': 'rgba(240, 237, 230, 0.55)'
+            extend: {
+                fontFamily: {
+                    syne: ['"Syne"', 'sans-serif'],
+                    dm: ['"DM Sans"', 'sans-serif'],
+                },
+                colors: {
+                    'gray-rgba': 'rgba(240, 237, 230, 0.5)',
+                    'green': 'rgba(200, 240, 74, 0.12)',
+                    'bordd': 'rgba(200, 240, 74, 0.3)',
+                    'grayy': 'rgba(240, 237, 230, 0.55)',
+                    'gray2': 'rgba(240, 237, 230, 0.35)',
+                    'features': 'rgba(255, 255, 255, 0.04)',
+                    'fbor': 'rgba(255, 255, 255, 0.1)',
+                    'gray3': 'rgba(240, 237, 230, 0.45)',
+                }
             }
-        }
         }
     }
     </script>
-
 </head>
 <body class="bg-[#0d0d0f] m-[8px]">
 
-
-    <!-----------------------------------------navbar-------------------------------------->
-    <nav class="h-[120px] flex px-20 py-10 justify-between items-centered border-b border-white/10">
-
-
+    <!-- navbar -->
+    <nav class="h-[120px] flex px-20 py-10 justify-between items-center border-b border-white/10">
         <div>
             <a class="text-white font-syne font-extrabold text-2xl">Flowly</a>
         </div>
@@ -45,23 +45,20 @@
             <a class="text-gray-rgba font-dm hover:text-white">Docs</a>
         </div>
         <div>
-            <button class="bg-[#c8f04a] text-[#0d0d0f] text-[15px] px-[20px] py-[9px] rounded-[100px] font-bold">Get started</button>
+            <button class="bg-[#c8f04a] text-[#0d0d0f] text-[15px] px-[20px] py-[9px] rounded-full font-bold cursor-pointer">Get started</button>
         </div>
-    
     </nav>
-    <!--------------------------------------main section------------------------------------>
+
+    <!-- hero -->
     <div class="pt-[90px] pb-[70px] px-[40px]">
-
-
-        <div class="w-[200px] mb-[28px] flex gap-[7px] bg-green border-[0.5px] border-bordd rounded-full px-[14px] py-[5px] text-[12px] items-center">
-            <div class="w-[6px] h-[6px] rounded-1/2 bg-[#c8f04a]"></div>
+        <div class="w-[200px] mb-[28px] flex gap-[7px] bg-green border border-bordd rounded-full px-[14px] py-[5px] text-[12px] items-center">
+            <div class="w-[6px] h-[6px] rounded-full bg-[#c8f04a]"></div>
             <a class="text-[#c8f04a]">New: AI workflows are here</a>
         </div>
         <h1 class="mb-[24px] font-syne text-[#f0ede6] tracking-[-2px] font-extrabold text-6xl leading-[1.05]">
             Build faster.
             <br>
-            Ship
-            <em class="text-[#c8f04a] font-sans not-italic">smarter.</em>
+            Ship <em class="text-[#c8f04a] not-italic">smarter.</em>
             <br>
             Grow bolder.
         </h1>
@@ -76,32 +73,74 @@
                 Watch demo
             </button>
         </div>
-
     </div>
 
-    <!------------------------------------------div stats------------------------------------------->
-    <div class="flex border-t border-b border-white/10 mx-[8px]">
-
+    <!-- stats -->
+    <div class="flex border-t border-b border-white/10">
         <div class="flex-1 px-[40px] py-[28px] border-r border-white/10">
             <p class="font-syne text-4xl text-[#f0ede6] font-extrabold tracking-[-1px]">12k+</p>
             <p class="font-dm text-[13px] text-gray-rgba mt-[4px]">Active teams</p>
         </div>
-
         <div class="flex-1 px-[40px] py-[28px] border-r border-white/10">
             <p class="font-syne text-4xl text-[#f0ede6] font-extrabold tracking-[-1px]">99.9%</p>
             <p class="font-dm text-[13px] text-gray-rgba mt-[4px]">Uptime SLA</p>
         </div>
-
         <div class="flex-1 px-[40px] py-[28px] border-r border-white/10">
             <p class="font-syne text-4xl text-[#f0ede6] font-extrabold tracking-[-1px]">4.9★</p>
             <p class="font-dm text-[13px] text-gray-rgba mt-[4px]">Average rating</p>
         </div>
-
         <div class="flex-1 px-[40px] py-[28px]">
             <p class="font-syne text-4xl text-[#f0ede6] font-extrabold tracking-[-1px]">48h</p>
             <p class="font-dm text-[13px] text-gray-rgba mt-[4px]">Avg. setup time</p>
         </div>
+    </div>
 
+    <!-- features -->
+    <div class="py-[80px] px-[40px]">
+        <p class="text-gray2 tracking-[2px] text-xs mb-[16px]">FEATURES</p>
+        <p class="font-syne text-[#f0ede6] text-[36px] font-bold tracking-[-1px] mb-[48px]">Everything you need</p>
+
+        <div class="grid grid-cols-3 gap-[16px]">
+
+            <!-- karta 1 -->
+            <div class="bg-features border border-fbor p-[28px] rounded-[14px]">
+                <div class="w-[40px] h-[40px] rounded-[10px] bg-[rgba(200,240,74,0.1)] flex items-center justify-center mb-[20px]">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c8f04a" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7" rx="1"/>
+                        <rect x="14" y="3" width="7" height="7" rx="1"/>
+                        <rect x="3" y="14" width="7" height="7" rx="1"/>
+                        <rect x="14" y="14" width="7" height="7" rx="1"/>
+                    </svg>
+                </div>
+                <p class="text-[#f0ede6] text-[17px] font-syne font-bold mb-[10px]">Visual builder</p>
+                <p class="text-gray3 leading-[1.7] text-[14px]">Drag and drop your way to beautiful workflows. No code required, ever.</p>
+            </div>
+
+            <!-- karta 2 -->
+            <div class="bg-features border border-fbor p-[28px] rounded-[14px]">
+                <div class="w-[40px] h-[40px] rounded-[10px] bg-[rgba(55,138,221,0.12)] flex items-center justify-center mb-[20px]">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#378add" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <p class="text-[#f0ede6] text-[17px] font-syne font-bold mb-[10px]">Integrations</p>
+                <p class="text-gray3 leading-[1.7] text-[14px]">Connect 200+ tools you already love. From Slack to Salesforce in minutes.</p>
+            </div>
+
+            <!-- karta 3 -->
+            <div class="bg-features border border-fbor p-[28px] rounded-[14px]">
+                <div class="w-[40px] h-[40px] rounded-[10px] bg-[rgba(212,83,126,0.12)] flex items-center justify-center mb-[20px]">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4537e" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                </div>
+                <p class="text-[#f0ede6] text-[17px] font-syne font-bold mb-[10px]">Real-time analytics</p>
+                <p class="text-gray3 leading-[1.7] text-[14px]">Watch your metrics update live. Make decisions backed by fresh data.</p>
+            </div>
+
+        </div>
     </div>
 
 </body>
