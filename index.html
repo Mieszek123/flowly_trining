@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            fontFamily: {
+            syne: ['"Syne"', 'sans-serif'],
+            dm: ['"DM Sans"', 'sans-serif'],
+            },
+            colors: {
+            'gray-rgba': 'rgba(240, 237, 230, 0.5)',
+            'green': 'rgba(200, 240, 74, 0.12)',
+            'bordd': 'rgba(200, 240, 74, 0.3)',
+            'grayy': 'rgba(240, 237, 230, 0.55)'
+            }
+        }
+        }
+    }
+    </script>
+
+</head>
+<body class="bg-[#0d0d0f] m-[8px]">
+
+
+    <!-----------------------------------------navbar-------------------------------------->
+    <nav class="h-[120px] flex px-20 py-10 justify-between items-centered border-b border-white/10">
+
+
+        <div>
+            <a class="text-white font-syne font-extrabold text-2xl">Flowly</a>
+        </div>
+        <div class="flex gap-40">
+            <a class="text-gray-rgba font-dm hover:text-white">Features</a>
+            <a class="text-gray-rgba font-dm hover:text-white">Pricing</a>
+            <a class="text-gray-rgba font-dm hover:text-white">Docs</a>
+        </div>
+        <div>
+            <button class="bg-[#c8f04a] text-[#0d0d0f] text-[15px] px-[20px] py-[9px] rounded-[100px] font-bold">Get started</button>
+        </div>
+    
+    </nav>
+    <!--------------------------------------main section------------------------------------>
+    <div class="pt-[90px] pb-[70px] px-[40px]">
+
+
+        <div class="w-[200px] mb-[28px] flex gap-[7px] bg-green border-[0.5px] border-bordd rounded-full px-[14px] py-[5px] text-[12px] items-center">
+            <div class="w-[6px] h-[6px] rounded-1/2 bg-[#c8f04a]"></div>
+            <a class="text-[#c8f04a]">New: AI workflows are here</a>
+        </div>
+        <h1 class="mb-[24px] font-syne text-[#f0ede6] tracking-[-2px] font-extrabold text-6xl leading-[1.05]">
+            Build faster.
+            <br>
+            Ship
+            <em class="text-[#c8f04a] font-sans not-italic">smarter.</em>
+            <br>
+            Grow bolder.
+        </h1>
+        <p class="text-lg font-dm leading-[1.7] text-grayy max-w-[480px] mb-[40px]">
+            Flowly is the all-in-one platform for teams who want to move fast without breaking things.
+        </p>
+        <div class="flex gap-[12px] items-center">
+            <button class="rounded-full bg-[#c8f04a] text-[#0d0d0f] cursor-pointer text-[15px] px-[28px] py-[14px] font-dm font-semibold">
+                Start for free →
+            </button>
+            <button class="rounded-full bg-transparent text-[rgba(240,237,230,0.7)] text-[15px] font-dm px-[28px] py-[14px] border border-white/20 cursor-pointer">
+                Watch demo
+            </button>
+        </div>
+
+    </div>
+
+    <!------------------------------------------div stats------------------------------------------->
+    <div class="flex border-t border-b border-white/10 mx-[8px]">
+
+        <div class="flex-1 px-[40px] py-[28px] border-r border-white/10">
+            <p class="font-syne text-4xl text-[#f0ede6] font-extrabold tracking-[-1px]">12k+</p>
+            <p class="font-dm text-[13px] text-gray-rgba mt-[4px]">Active teams</p>
+        </div>
+
+        <div class="flex-1 px-[40px] py-[28px] border-r border-white/10">
+            <p class="font-syne text-4xl text-[#f0ede6] font-extrabold tracking-[-1px]">99.9%</p>
+            <p class="font-dm text-[13px] text-gray-rgba mt-[4px]">Uptime SLA</p>
+        </div>
+
+        <div class="flex-1 px-[40px] py-[28px] border-r border-white/10">
+            <p class="font-syne text-4xl text-[#f0ede6] font-extrabold tracking-[-1px]">4.9★</p>
+            <p class="font-dm text-[13px] text-gray-rgba mt-[4px]">Average rating</p>
+        </div>
+
+        <div class="flex-1 px-[40px] py-[28px]">
+            <p class="font-syne text-4xl text-[#f0ede6] font-extrabold tracking-[-1px]">49h</p>
+            <p class="font-dm text-[13px] text-gray-rgba mt-[4px]">Avg. setup time</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
